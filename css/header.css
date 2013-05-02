@@ -18,18 +18,18 @@ body {
 	background-color: rgb(103,159,210);
 }
 .navigation li {
-	font-weight: bold;
 	float: left;
 	padding: 10px;
 }
 .navigation li a:link {
-	color: rgb(4,58,107);
+	color: rgb(2,38,70);
 	text-decoration: none;
 }
 .navigation li a:hover {
 	font-weight:bold;
+	text-decoration: underline;
 }
-.navigation li a:active {
+.navigation li a.current:link {
 	text-decoration: underline;
 	font-weight: bold;
 }

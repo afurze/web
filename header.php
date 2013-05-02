@@ -7,13 +7,14 @@
 	<link href="css/header.css" rel="stylesheet" type="text/css">
 	<link href="css/footer.css" rel="stylesheet" type="text/css">
 	<link href="css/content.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/header.js"></script>
 </head>
-<body>
-	<div class="title">
+<body onload="setCurrent();">
+	<div id="title" class="title">
 		<h1><span class="defword">Furze</span><span class="def"> [furz]: a spiny European shrub</span></h1>
 	</div>
 
-	<div class="navigation">
+	<div id="navigation" class="navigation">
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="about.php">About</a></li>
@@ -21,4 +22,4 @@
 		</ul>
 	</div>
 
-	<div class="content">
+	<div id="content" class="content">
