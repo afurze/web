@@ -6,3 +6,10 @@
 	-webkit-border-radius: 0px 0px 15px 15px;
 	-moz-border-radius: 0px 0px 15px 15px;
 }
+
+.attribution.copyright {
+
+}
+.attribution.updated {
+	float: right;
+}
