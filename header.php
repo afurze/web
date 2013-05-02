@@ -7,10 +7,14 @@
 	<link href="css/default.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+	<div class="title">
+
+	</div>
+
 	<div class="navigation">
 		<ul>
-			<li>Home</li>
-			<li>About</li>
-			<li>Contact</li>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="about.php">About</a></li>
+			<li><a href="contact.php">Contact</a></li>
 		</ul>
 	</div>

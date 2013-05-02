@@ -1,3 +1,3 @@
 <?php include 'header.php'; ?>
-	<p>Cool stuff here!</p>
+	<p>Under Construction</p>
 <?php include 'footer.php'; ?>
