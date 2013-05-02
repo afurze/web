@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="title">
-		<h1><span class="defword">Furze</span><span class="def">: a spiny European shrub</span></h1>
+		<h1><span class="defword">Furze</span><span class="def"> [furz]: a spiny European shrub</span></h1>
 	</div>
 
 	<div class="navigation">

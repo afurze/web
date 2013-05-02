@@ -1,3 +1,18 @@
+a:link {
+	color: rgb(0,172,107);
+}
+
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
 .content {
-	background-color: #00AC6B;
+	background-color: rgb(0,112,70);
+	color: #FFF;
+	height: 500px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: rgb(255,149,0);
 }
