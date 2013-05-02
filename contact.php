@@ -1,5 +1,12 @@
 <?php include 'header.php' ?>
 
-Contact me.
+<h2>Contact</h2>
+
+<ul class="nolist">
+	<li><span class="facebook"><a href=""></a><span></li>
+	<li><span class="twitter"><a href=""></a></span></li>
+	<li><span class="linkedin"><a href=""></a></span></li>
+	<li><span class="googleplus"><a href=""></a></span></li>
+</ul>
 
 <?php include 'footer.php' ?>

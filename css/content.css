@@ -15,6 +15,15 @@ a:hover {
 	clear: both;
 }
 
+.facebook {
+	display: block;
+	width: 58px;
+	height: 58px;
+	background-image: url(images/Social_Media_Icons.jpg);
+	background-repeat: no-repeat;
+	background-position: -4px -7px;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	color: rgb(255,149,0);
 }
@@ -37,4 +46,8 @@ h3 {
 
 p {
 	padding: 5px;
+}
+
+.nolist {
+	list-style-type: none;
 }
