@@ -1,5 +1,8 @@
 .attribution {
-	width: 100%;
 	background-color: rgb(103,159,210);
 	color: rgb(4,58,107);
+	padding: 10px;
+	border-radius: 0px 0px 15px 15px;
+	-webkit-border-radius: 0px 0px 15px 15px;
+	-moz-border-radius: 0px 0px 15px 15px;
 }
