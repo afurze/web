@@ -15,6 +15,7 @@ a:hover {
 	clear: both;
 }
 
+/* social media icons */
 .facebook {
 	display: block;
 	width: 57px;
@@ -23,7 +24,32 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: -4px -8px;
 }
+.twitter {
+	display: block;
+	width: 57px;
+	height: 56px;
+	background-image: url(/images/Social_Media_Icons.jpg);
+	background-repeat: no-repeat;
+	background-position: -82px -8px;
+}
+.linkedin {
+	display: block;
+	width: 57px;
+	height: 56px;
+	background-image: url(/images/Social_Media_Icons.jpg);
+	background-repeat: no-repeat;
+	background-position: -240px -8px;
+}
+.googleplus {
+	display: block;
+	width: 57px;
+	height: 56px;
+	background-image: url(/images/Social_Media_Icons.jpg);
+	background-repeat: no-repeat;
+	background-position: -240px -91px;
+}
 
+/* standard html tags */
 h1, h2, h3, h4, h5, h6 {
 	color: rgb(255,149,0);
 }
