@@ -15,6 +15,9 @@ a:hover {
 	clear: both;
 }
 
+.gitlog {
+	padding: 20px;
+}
 .gitlog tr.sha {
 	font-weight: bold;
 	background-color: #D29135;
@@ -32,6 +35,8 @@ a:hover {
 .gitlog tr.data .label {
 	padding-left: 15px;
 	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .nolist {
