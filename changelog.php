@@ -2,7 +2,7 @@
 
 <h2>Changelog</h2>
 
-<div class="gitlog">
+<div class="gitlog lefthalf">
 	<table>
 		<?php 
 			// construct curl request
@@ -24,6 +24,11 @@
 			}
 		?>
 	</table>
+</div>
+
+<div class="righthalf">
+	<p>These are the past ten commits for this site, not really worth
+		looking at, just wanted to see if I could make it work</p>
 </div>
 
 <?php include 'footer.php' ?>
