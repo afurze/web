@@ -14,6 +14,7 @@ body {
 
 .navigation li {
 	font-weight: bold;
+	float: left;
 	padding: 10px;
 }
 .navigation li a {
@@ -23,6 +24,7 @@ body {
 	list-style-type: none;
 	width: 100%;
 	background-color: #00c;
+	position: absolute;
 }
 
 .title {
