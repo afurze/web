@@ -7,5 +7,8 @@
 <body>
 	<div class="navigation">
 		<ul>
-		
-		<li>
+			<li>Home</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+	</div>
