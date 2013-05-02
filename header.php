@@ -3,6 +3,8 @@
 
 <head>
 	<title>Furze: a spiny European shrub</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/default.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="navigation">
