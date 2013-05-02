@@ -4,11 +4,11 @@
 <head>
 	<title>Furze: a spiny European shrub</title>
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link href="css/default.css" rel="stylesheet" type="text/css">
+	<link href="css/header.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="title">
-		<h1>Furze: a spiny European shrub</h1>
+		<h1><span class="defword">Furze</span><span class="def">: a spiny European shrub</span></h1>
 	</div>
 
 	<div class="navigation">
