@@ -15,7 +15,7 @@
 
 			// error check and result print
 			if (!curl_errno($curl)) {
-				for ($i = 0; $i < 5; $i++) {
+				for ($i = 0; $i < 7; $i++) {
 					print "<tr class='sha'><td class='label'>SHA</td><td class='value'>{$info[$i]['sha']}</td></tr>";
 					print "<tr class='data'><td class='label'>Author</td><td class='value'>{$info[$i]['commit']['author']['name']}</td></tr>";
 					print "<tr class='data'><td class='label'>Date</td><td class='value'>{$info[$i]['commit']['author']['date']}</td></tr>";

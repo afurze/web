@@ -15,6 +15,29 @@ a:hover {
 	clear: both;
 }
 
+.gitlog tr.sha {
+	font-weight: bold;
+	background-color: #D29135;
+}
+
+.gitlog tr.sha .label {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.gitlog tr.data {
+	background-color: #53B891;
+	font-style: italic;
+}
+.gitlog tr.data .label {
+	padding-left: 15px;
+	padding-right: 20px;
+}
+
+.nolist {
+	list-style-type: none;
+}
+
 /* social media icons */
 .facebook {
 	display: block;
@@ -72,8 +95,4 @@ h3 {
 
 p {
 	padding: 5px;
-}
-
-.nolist {
-	list-style-type: none;
 }
