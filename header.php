@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="title">
-
+		<h1>Furze: a spiny European shrub</h1>
 	</div>
 
 	<div class="navigation">
