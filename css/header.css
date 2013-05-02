@@ -19,7 +19,7 @@ body {
 .navigation {
 	float: left;
 	width: 100%;
-	background-color: #00C;
+	background-color: #007046;
 }
 .navigation li {
 	font-weight: bold;
@@ -35,7 +35,7 @@ body {
 }
 
 .title {
-	background-color: #0E0;
+	background-color: #0C5DA5;
 }
 .title h1 {
 	font-size: 2em;
