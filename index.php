@@ -13,7 +13,6 @@
 
 	<div class="body-coming-soon">
 		<h1>
-			<span>Future home of something quite cool!</span>
 		</h1>
 		
 		<div class="info-container">
