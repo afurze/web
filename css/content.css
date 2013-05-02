@@ -10,7 +10,7 @@ a:hover {
 .content {
 	background-color: rgb(0,112,70);
 	color: #FFF;
-	height: 500px;
+	min-height: 500px;
 	padding: 5px;
 	clear: both;
 }
