@@ -3,6 +3,7 @@ body {
 	width: 75%;
 	margin-left: 12.5%;
 	margin-right: 12.5%;
+	min-width: 400px;
 }
 
 .def {
@@ -48,6 +49,6 @@ body {
 	padding: 20px;
 }
 .title h1 {
-	font-size: 2em;
+	font-size: 3em;
 	color: #FFF;
 }

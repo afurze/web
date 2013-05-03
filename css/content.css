@@ -86,6 +86,10 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: -240px -91px;
 }
+.socialmedia ul li {
+	float: left;
+	padding: 10%;
+}
 
 /* standard html tags */
 h1, h2, h3, h4, h5, h6 {
