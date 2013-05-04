@@ -1,10 +1,13 @@
 a:link {
-	color: rgb(0,172,107);
+	color: rgb(2,38,70);
 }
 
 a:hover {
 	text-decoration: none;
-	font-weight: bold;
+}
+
+a:visited {
+	color: rgb(2,38,70);
 }
 
 .content {
