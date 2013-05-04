@@ -78,6 +78,13 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: -240px -8px;
 }
+.github {
+	display: block;
+	width: 57px;
+	height: 56px;
+	background-image: url(/images/github.png);
+	background-repeat: no-repeat;
+}
 .googleplus {
 	display: block;
 	width: 57px;

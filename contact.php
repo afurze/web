@@ -12,6 +12,7 @@
 		<li><a href="http://twitter.com/aspinyshrub"><span class="twitter"></span></a></li>
 		<li><a href="http://linkedin.com/andrewfurze"><span class="linkedin"></span></a></li>
 		<li><a href="http://plus.google.com/113452222489443574607"><span class="googleplus"></span></a></li>
+		<li><a href="http://github.com/afurze"><span class="github"></span></a>
 	</ul>
 </div>
 
