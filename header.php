@@ -8,9 +8,9 @@
 	<link href="css/footer.css" rel="stylesheet" type="text/css">
 	<link href="css/content.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/analytics.js"></script>
 </head>
 <body onload="setCurrent();">
-    <?php include_once("analytics.php"); ?>
 	<div id="title" class="title">
 		<h1><span class="defword">Furze</span><span class="def"> [furz]: a spiny European shrub</span></h1>
 	</div>
