@@ -16,7 +16,7 @@
 			// error check and result print
 			if (!curl_errno($curl)) {
 				for ($i = 0; $i < 10; $i++) {
-					print "<tr class='sha'><td class='label'>SHA</td><a href='https://api.github.com/repos/afurze/web/git/commits/{$info[$i]['sha']}'><td class='value'>{$info[$i]['sha']}</td></a></tr>";
+					print "<tr class='sha'><td class='label'>SHA</td><td class='value'><a href='https://api.github.com/repos/afurze/web/git/commits/{$info[$i]['sha']}'>{$info[$i]['sha']}</td></a></tr>";
 					print "<tr class='data'><td class='label'>Author</td><td class='value'>{$info[$i]['commit']['author']['name']}</td></tr>";
 					print "<tr class='data'><td class='label'>Date</td><td class='value'>{$info[$i]['commit']['author']['date']}</td></tr>";
 					print "<tr class='data'><td class='label'>Message</td><td class='value'>{$info[$i]['commit']['message']}</td></tr>";
