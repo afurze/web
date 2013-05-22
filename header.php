@@ -28,6 +28,7 @@
 			<li><a href="index.php">Home</a></li>
 			<li><a href="about.php">About</a></li>
 			<li><a href="contact.php">Contact</a></li>
+			<li><a href="projects.php"></a></li>
 			<li><a href="changelog.php">Change Log</a></li>
 		</ul>
 	</div>
