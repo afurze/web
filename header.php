@@ -25,11 +25,12 @@
 
 	<div id="navigation" class="navigation">
 		<ul>
-			<li><a href="index.php">Home</a></li>
-			<li><a href="about.php">About</a></li>
-			<li><a href="contact.php">Contact</a></li>
-			<li><a href="projects.php">Projects</a></li>
-			<li><a href="changelog.php">Change Log</a></li>
+			<li><a href="/index.php">Home</a></li>
+			<li><a href="/about.php">About</a></li>
+			<li><a href="/contact.php">Contact</a></li>
+            <li><a href="/gallery/">Gallery</a></li>
+			<li><a href="/projects.php">Projects</a></li>
+			<li><a href="/changelog.php">Change Log</a></li>
 		</ul>
 	</div>
 

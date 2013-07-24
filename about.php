@@ -3,17 +3,15 @@
 <h2>About</h2>
 
 <p>
-	My name is Andrew Furze and I am a soon to be graduate of the
-	Colorado School of Mines in Golden, CO.  I will be receiving my 
+	My name is Andrew Furze and I am a graduate of the
+	Colorado School of Mines in Golden, CO.  I received my 
 	bachelors in Computer Science with a minor in Geological
-	Engineering in August of this year.
+	Engineering in August of 2013
 </p>
 <p>
 	I worked as a web development intern for the U.S. Geological Survey
 	<a href="http://geomag.usgs.gov">Geomagnetism Program</a> and then 
 	for the USGS <a href="http://earthquake.usgs.gov">Earthquake Program</a>.
-	In July of this year I will begin working for <a href="http://appliedtrust.com">
-	AppliedTrust, Inc.</a> as a security engineer.
 </p>
 <p>
 	I attend meetings of the <a href="http://www.meetup.com/OWASP-Boulder/">

@@ -4,11 +4,7 @@
 	both active and inactive.</p>
 
 <p>
-	<ul>
-		<li><a href="/talkivi/assets/www/list.html">TalKivi</a>: this is a mobile application 
-			written in the PhoneGap cross-platform development enviornment.  It is best viewed 
-			with some kind of in-browser emulator.</li>
-	</ul>
+	No projects right now!
 </p>
 
 <?php include 'footer.php' ?>
