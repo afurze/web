@@ -9,14 +9,19 @@
 	Engineering in August of 2013
 </p>
 <p>
+	Currently, I am seeking a position in information security, computer security, 
+	or network security.  If you know anyone currently seeking people for such a 
+	position, please <a href="contact.php">contact me</a>.
+</p>
+<p>
 	I worked as a web development intern for the U.S. Geological Survey
 	<a href="http://geomag.usgs.gov">Geomagnetism Program</a> and then 
 	for the USGS <a href="http://earthquake.usgs.gov">Earthquake Program</a>.
 </p>
 <p>
-	I attend meetings of the <a href="http://www.meetup.com/OWASP-Boulder/">
+	I attended meetings of the <a href="http://www.meetup.com/OWASP-Boulder/">
 	Boulder OWASP chapter</a> where I helped, to whetever extent I could, with
-	putting together a CTF for SnowFROC 2013 and AppSec USA 2014.
+	putting together a CTF for SnowFROC 2013.
 </p>
 <p>
 	Apart from computer science, I am also a big soccer fan.  I played
