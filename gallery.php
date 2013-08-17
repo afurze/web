@@ -14,8 +14,8 @@
 </p>
 
 <ul>
-	<li><a href="Europe.zip">Europe</a></li>
-	<li><a href="Furze_Wedding.zip"></a></li>
+	<li><a href="/images/Europe.zip">Europe</a></li>
+	<li><a href="/images/Furze_Wedding.zip"></a></li>
 </ul>
 
 <?php include 'footer.php' ?>
