@@ -13,7 +13,7 @@
 	Each one is several gigabytes in size, so only download these if you REALLY want the originals.
 </p>
 
-<ul>
+<ul class="list">
 	<li><a href="/images/Europe.zip">Europe</a></li>
 	<li><a href="/images/Furze_Wedding.zip">Wedding</a></li>
 </ul>

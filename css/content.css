@@ -52,8 +52,12 @@ a:visited {
 	clear: none;
 }
 
-.nolist {
-	list-style-type: none;
+.list {
+	list-style-type: circle;
+}
+.list li {
+    padding: 5px;
+    margin-left: 25px;
 }
 
 /* social media icons */

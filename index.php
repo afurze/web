@@ -12,4 +12,17 @@
 		page as well as the <a href="contact.php">Contact</a> pages are
 		the only pages I would consider to be production pages.
 	</p>
+    
+    <h3>Random thoughts:</h3>
+    <ul class="list">
+        <li>
+            "Naptime" is wasted on the young.
+        </li>
+        <li>
+            If conspiracy theories, healing crystals, bigfoot, and other such crimes against
+            intelligence are of interest to you, checkout 
+            <a href="http://skepdic.com" target="_blank">skepdic.com</a>.
+        </li>
+    </ul>
+
 <?php include 'footer.php'; ?>
