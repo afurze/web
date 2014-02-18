@@ -1,4 +1,5 @@
-dbconnect.php
+db_write_connect.php
+db_read_connect.php
 
 #################
 ## Eclipse
