@@ -25,7 +25,7 @@
 </p>
 <p>
 	Apart from computer science, I am also a big soccer fan.  I played
-	for twelve years and have been a referee since 2001.  I am also looking
+	for twelve years and was a referee from 2001 to 2013.  I am also looking
 	for someone to go mountain biking with, so shoot me an email if your
 	interested!
 </p>

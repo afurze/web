@@ -4,7 +4,12 @@
 	both active and inactive.</p>
 
 <p>
-	No projects right now!
+	<ul>
+		<li>
+			Currently working on writing a client management system (using php and MySQL),
+			for what may or may not actually turn into a small repair gig.
+		</li>
+	</ul>
 </p>
 
 <?php include 'footer.php' ?>
