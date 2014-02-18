@@ -21,16 +21,15 @@
 		//TODO: check for existing user
 
 		// register new user
-		/**mysqli_query($db, "INSERT INTO clients (firstName, lastName, homePhone, cellPhone, 
+		mysqli_query($db, "INSERT INTO clients (firstName, lastName, homePhone, cellPhone, 
 			workPhone, address, email, city, state, zip) VALUES ('".$firstName."', '".$lastName
 			."', '".$homePhone."', '".$cellPhone."', '".$workPhone."', '".$address."', '".
-			$email."', '".$city."', '".$state."', '".$zip."', '".$email."')"
-		);**/
+			$email."', '".$city."', '".$state."', '".$zip."')"
+		);
 
-		//test
-		echo "INSERT INTO clients (firstName, lastName, homePhone, cellPhone, 
+		/**echo "INSERT INTO clients (firstName, lastName, homePhone, cellPhone, 
 			workPhone, address, email, city, state, zip) VALUES ('".$firstName."', '".$lastName
 			."', '".$homePhone."', '".$cellPhone."', '".$workPhone."', '".$address."', '".
-			$email."', '".$city."', '".$state."', '".$zip."', '".$email."')"
+			$email."', '".$city."', '".$state."', '".$zip."')";**/
 	}
 ?>
