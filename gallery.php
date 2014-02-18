@@ -15,7 +15,7 @@
 
 <ul class="list">
 	<li><a href="/images/Europe.zip">Europe</a></li>
-	<li><a href="/images/Furze_Wedding.zip">Wedding</a></li>
+	<li>Wedding photos coming soon!</li>
 </ul>
 
 <?php include 'footer.php' ?>
