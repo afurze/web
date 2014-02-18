@@ -10,7 +10,7 @@
 	$workPhone = $_POST["workPhone"];
 	$address = $_POST["address"];
 	$city = $_POST["city"];
-	$state = $_POST["state"];
+	$state = $_POST["state"].value;
 	$zip = $_POST["zip"];
 	$email = $_POST["email"];
 
