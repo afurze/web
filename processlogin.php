@@ -3,10 +3,8 @@
 	include 'PasswordHash.php';
 
 	// get form info
-	$username = $_POST["username"];
-	$password = $_POST["password"];
-
-	//TODO: sanitize user input
+	$username = mysqli_real_escape_string($_POST["username"]);
+	$password = mysqli_real_escape_string($_POST["password"]);
 
 	// get info from db
 	$userinfo = mysqli_query($db, "SELECT * FROM Users WHERE username='" . $username . "';");
