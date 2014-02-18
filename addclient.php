@@ -12,6 +12,7 @@
 		<dt>State:</dt>
 		<dd>
 			<select>
+				<option value="">Select one...</option>
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
 				<option value="AZ">Arizona</option>
