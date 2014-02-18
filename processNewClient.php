@@ -13,10 +13,27 @@
 	$state = $_POST["state"].value;
 	$zip = $_POST["zip"];
 	$email = $_POST["email"];
+	$username = $_POST["username"];
+	$password = $_POST["password"];
+	$confirmPassword = $_POST["confirmPassword"];
 
 	//TODO: sanitize
 
 	//TODO: error checking
+	// user does not exist
+	$dbuser = mysqli_query($db, "SELECT username FROM users WHERE username = ".$username);
+	if ($dbuser) {
+		echo "That username is already in use.";
+	}
+	// passwords match
+	if (!($password === $confirmPassword)) {
+		echo "The passwords you entered did not match.";
+	}
+	// client supplied at least one phone number
+	if (!($cellPhone || $workPhone || $homePhone)) {
+		echo "You must supply at least one valid phone number.";
+	}
+	//TODO: client does not exist
 
 	//TODO: check for existing user
 	$existingUser = mysqli_query($db, "SELECT * FROM clients WHERE ")

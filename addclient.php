@@ -67,6 +67,9 @@
 			</select>
 		</dd>
 		<dt>Zip Code:</dt><dd><input type="number" size="5" maxlength="5"></dd>
+		<dt>Username:</dt><dd><input type="text" name="username" required></dd>
+		<dt>Password:</dt><dd><input type="password" name="password" required></dd>
+		<dt>Confirm Password:</dt><dd><input type="password" name="confirmPassword" required></dd>
 	</dl>
 	<input type="submit" value="Register">
 </form>
