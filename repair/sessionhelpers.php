@@ -5,7 +5,7 @@
 	* Return false for none
 	**/
 	function active_session() {
-		if (session_id() === "") {
+		if (session_status() === PHP_SESSION_ACTIVE) {
 			return true;
 		} else {
 			return false;
