@@ -4,11 +4,11 @@
 	include 'sessionhelpers.php';
 
 	// get form info
-	$username = mysqli_real_escape_string($db, $_POST["username"]);
-	$password = mysqli_real_escape_string($db, $_POST["password"]);
+	$username = $db->real_escape_string($_POST["username"]);
+	$password = $db->real_escape_string($_POST["password"]);
 
 	// get info from db
-	$userinfo = mysqli_query($db, "SELECT * FROM Users WHERE username='" . $username . "';");
+	$userinfo = $db->query("SELECT * FROM Users WHERE username='" . $username . "';");
 	// error check
 	if (!$userinfo) {
 		echo "Invalid username/password combination!";
