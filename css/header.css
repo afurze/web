@@ -37,9 +37,6 @@ body {
 	list-style-type: none;
 	width: 75%;
 }
-.navigation li.right {
-	float: right;
-}
 
 .title {
 	background-color: rgb(0,172,107);
