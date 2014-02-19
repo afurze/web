@@ -1,4 +1,5 @@
 <?php include 'header.php' ?>
+<?php include 'restricted.php' ?>
 <form action="processNewClient.php" method="post">
 	<dl>
 		<dt>First Name:</dt><dd><input type="text" name="firstName" required></dd>

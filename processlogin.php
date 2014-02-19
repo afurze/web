@@ -1,6 +1,7 @@
 <?php 
 	include 'db_read_connect.php';
 	include 'PasswordHash.php';
+	include 'sessionhelpers.php';
 
 	// get form info
 	$username = mysqli_real_escape_string($_POST["username"]);
@@ -16,7 +17,11 @@
 		$dbpass = $userinfo["password"];
 
 		// test for validity
-		$validUser = validate_password($password, $dbpass);
+		if(validate_password($password, $dbpass)) {
+			new_session($username, $userinfo["isAdmin"]);
+		} else {
+			echo "Invalid username/password combination!";
+		}
 	}
 
 	include 'db_close.php';
