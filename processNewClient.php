@@ -36,17 +36,29 @@
 	} else {
 		if($cellPhone) {
 			$existingClient = $db->query("SELECT * FROM clients WHERE cellPhone = '".$cellPhone."'");
-			echo gettype($existingClient);
+			if ($existingClient->num_rows >= 1) {
+				$existingClient->close();
+				echo "Cell phone number already in use."
+				$error = true;
+			}
 			$existingClient->close();
 		}
 		if($homePhone) {
 			$existingClient = $db->query("SELECT * FROM clients WHERE homePhone = '".$homePhone."'");
-
+			if ($existingClient->num_rows >= 1) {
+				$existingClient->close();
+				echo "Home phone number already in use."
+				$error = true;
+			}
 			$existingClient->close();
 		}
 		if($workPhone) {
 			$existingClient = $db->query("SELECT * FROM clients WHERE workPhone = '".$workPhone."'");
-
+			if ($existingClient->num_rows >= 1) {
+				$existingClient->close();
+				echo "Work phone number already in use."
+				$error = true;
+			}
 			$existingClient->close();
 		}
 	}
