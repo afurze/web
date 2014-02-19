@@ -19,7 +19,7 @@
 
 	$error = false;
 	// user does not exist
-	$dbuser = $db->query("SELECT username FROM users WHERE username = ".$username);
+	$dbuser = $db->query("SELECT username FROM users WHERE username = '".$username."';");
 	if ($dbuser) {
 		echo "That username is already in use.";
 		$error = true;
@@ -35,46 +35,71 @@
 		$error = true;
 	} else {
 		if($cellPhone) {
-			$existingClient = $db->query("SELECT * FROM clients WHERE cellPhone = '".$cellPhone."'");
+			$existingClient = $db->query("SELECT * FROM clients WHERE cellPhone = '".$cellPhone."';");
 			if ($existingClient->num_rows >= 1) {
 				$existingClient->close();
 				echo "Cell phone number already in use.";
 				$error = true;
 			}
-			$existingClient->close();
 		}
 		if($homePhone) {
-			$existingClient = $db->query("SELECT * FROM clients WHERE homePhone = '".$homePhone."'");
+			$existingClient = $db->query("SELECT * FROM clients WHERE homePhone = '".$homePhone."';");
 			if ($existingClient->num_rows >= 1) {
 				$existingClient->close();
 				echo "Home phone number already in use.";
 				$error = true;
 			}
-			$existingClient->close();
 		}
 		if($workPhone) {
-			$existingClient = $db->query("SELECT * FROM clients WHERE workPhone = '".$workPhone."'");
+			$existingClient = $db->query("SELECT * FROM clients WHERE workPhone = '".$workPhone."';");
 			if ($existingClient->num_rows >= 1) {
 				$existingClient->close();
 				echo "Work phone number already in use.";
 				$error = true;
 			}
-			$existingClient->close();
 		}
 	}
 
 	// register new client
 	if (!$error) {
-		$newClient = $db->query("INSERT INTO clients (firstName, lastName, homePhone, cellPhone, 
-			workPhone, address, email, city, state, zip) VALUES ('".$firstName."', '".$lastName
-			."', '".$homePhone."', '".$cellPhone."', '".$workPhone."', '".$address."', '".
-			$email."', '".$city."', '".$state."', '".$zip."')"
+		$newClient = $db->query("INSERT INTO clients (
+			firstName, 
+			lastName, 
+			homePhone, 
+			cellPhone, 
+			workPhone, 
+			address, 
+			email, 
+			city, 
+			state, 
+			zip) VALUES (
+			'".$firstName."',
+			'".$lastName."', 
+			'".$homePhone."', 
+			'".$cellPhone."', 
+			'".$workPhone."', 
+			'".$address."', 
+			'".$email."', 
+			'".$city."', 
+			'".$state."', 
+			'".$zip."'
+			);"
 		);
 	}
+	$newClientID = $db->query("SELECT clientID FROM clients WHERE 
+		homePhone = '".$homePhone."' AND 
+		cellPhone = '".$cellPhone."' AND 
+		workPhone = '".$workPhone."';");
 
 	// register new user
-	/**$newUser = $db->query("INSERT INTO users (clientID, username, hash) VALUES (
-		'".$newClient->clientID);**/
+	$newUser = $db->query("INSERT INTO users (
+		clientID, 
+		username, 
+		hash) VALUES (
+		'".$newClientID."',
+		'".$username."',
+		'".create_hash($password)."');
+		");
 	
 	include 'footer.php';
 ?>
