@@ -29,7 +29,7 @@
 
 	include 'db_close.php';
 
-	header('Location:repair.php');
+	header('Location:index.php');
 	exit();
 ?>
 
