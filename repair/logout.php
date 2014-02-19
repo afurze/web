@@ -3,6 +3,6 @@
 
 	new_session("", "");
 
-	header('Location:index.php');
+	header('Location:repairlogin.php');
 	exit();
 ?>
