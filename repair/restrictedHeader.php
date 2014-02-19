@@ -31,18 +31,19 @@
             <li><a href="/gallery.php">Gallery</a></li>
 			<li><a href="/projects.php">Projects</a></li>
 			<li><a href="/changelog.php">Change Log</a></li>
-		</ul>
+		</ul>	
+		<div id="session_controls">
+			<ul>
+				<?php 
+					if (session_status() === PHP_SESSION_ACTIVE && $_SESSION["username"] != "") {
+						echo "<li><a href='logout.php'>Logout</a></li>";
+					} else {
+						echo "<li><a href='repairlogin.php'>Login</a></li>";
+					}
+				?>
+			</ul>
+		</div>
 	</div>
-	<div id="session_controls">
-		<ul>
-			<?php 
-				if (session_status() === PHP_SESSION_ACTIVE && $_SESSION["username"] != "") {
-					echo "<li><a href='logout.php'>Logout</a></li>";
-				} else {
-					echo "<li><a href='repairlogin.php'>Login</a></li>";
-				}
-			?>
-		</ul>
-	</div>
+
 
 	<div id="content" class="content">
