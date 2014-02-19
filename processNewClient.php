@@ -3,50 +3,57 @@
 	include 'db_write_connect.php';
 
 	// get vars
-	$firstName = mysqli_real_escape_string($db, $_POST["firstName"]);
-	$lastName = mysqli_real_escape_string($db,$_POST["lastName"]);
-	$homePhone = mysqli_real_escape_string($db,$_POST["homePhone"]);
-	$cellPhone = mysqli_real_escape_string($db,$_POST["cellPhone"]);
-	$workPhone = mysqli_real_escape_string($db,$_POST["workPhone"]);
-	$address = mysqli_real_escape_string($db,$_POST["address"]);
-	$city = mysqli_real_escape_string($db, $_POST["city"]);
-	$state = mysqli_real_escape_string($db, $_POST["state"].value);
-	$zip = mysqli_real_escape_string($db, $_POST["zip"]);
-	$email = mysqli_real_escape_string($db, $_POST["email"]);
-	$username = mysqli_real_escape_string($db, $_POST["username"]);
-	$password = mysqli_real_escape_string($db, $_POST["password"]);
-	$confirmPassword = mysqli_real_escape_string($db, $_POST["confirmPassword"]);
+	$firstName = $db->real_escape_string($_POST["firstName"]);
+	$lastName = $db->real_escape_string($_POST["lastName"]);
+	$homePhone = $db->real_escape_string($_POST["homePhone"]);
+	$cellPhone = $db->real_escape_string($_POST["cellPhone"]);
+	$workPhone = $db->real_escape_string($_POST["workPhone"]);
+	$address =$db->real_escape_string($_POST["address"]);
+	$city = $db->real_escape_string($_POST["city"]);
+	$state = $db->real_escape_string($_POST["state"].value);
+	$zip = $db->real_escape_string($_POST["zip"]);
+	$email = $db->real_escape_string($_POST["email"]);
+	$username = $db->real_escape_string ($_POST["username"]);
+	$password = $db->real_escape_string($_POST["password"]);
+	$confirmPassword = $db->real_escape_string($_POST["confirmPassword"]);
 
-	//TODO: error checking
+	$error = false;
 	// user does not exist
-	$dbuser = mysqli_query($db, "SELECT username FROM users WHERE username = ".$username);
+	$dbuser = $db->query("SELECT username FROM users WHERE username = ".$username);
 	if ($dbuser) {
 		echo "That username is already in use.";
+		$error = true;
 	}
 	// passwords match
 	if (!($password === $confirmPassword)) {
 		echo "The passwords you entered did not match.";
+		$error = true;
 	}
 	// client supplied at least one phone number
 	if (!($cellPhone || $workPhone || $homePhone)) {
 		echo "You must supply at least one valid phone number.";
+		$error = true;
 	}
-	//TODO: client does not exist
+	$existingUser = $db->query("SELECT * FROM clients WHERE ");
+	if ($existingUser) {
+		echo "Client already exists.";
+		$error = true;
+	}
 
-	//TODO: check for existing user
-	$existingUser = mysqli_query($db, "SELECT * FROM clients WHERE ")
+	// register new client
+	if (!$error) {
+		$newClient = $db->query("INSERT INTO clients (firstName, lastName, homePhone, cellPhone, 
+			workPhone, address, email, city, state, zip) VALUES ('".$firstName."', '".$lastName
+			."', '".$homePhone."', '".$cellPhone."', '".$workPhone."', '".$address."', '".
+			$email."', '".$city."', '".$state."', '".$zip."')"
+		);
+		$newClient = $newClient->fetch_array();
+		echo $newClient["clientID"];
+	}
 
 	// register new user
-	mysqli_query($db, "INSERT INTO clients (firstName, lastName, homePhone, cellPhone, 
-		workPhone, address, email, city, state, zip) VALUES ('".$firstName."', '".$lastName
-		."', '".$homePhone."', '".$cellPhone."', '".$workPhone."', '".$address."', '".
-		$email."', '".$city."', '".$state."', '".$zip."')"
-	);
-
-	/**echo "INSERT INTO clients (firstName, lastName, homePhone, cellPhone, 
-		workPhone, address, email, city, state, zip) VALUES ('".$firstName."', '".$lastName
-		."', '".$homePhone."', '".$cellPhone."', '".$workPhone."', '".$address."', '".
-		$email."', '".$city."', '".$state."', '".$zip."')";**/
+	$newUser = $db->query("INSERT INTO users (clientID, username, hash) VALUES (
+		'".$newClient->clientID)
 	
 	include 'footer.php';
 ?>
