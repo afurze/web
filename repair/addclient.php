@@ -1,6 +1,6 @@
-<?php include 'restricted.php' ?>
-<?php include 'restrictedHeader.php' ?>
-<form action="processNewClient.php" method="post">
+<?php include '/repair/restricted.php' ?>
+<?php include '/repair/restrictedHeader.php' ?>
+<form action="/repair/processNewClient.php" method="post">
 	<dl>
 		<dt>First Name:</dt><dd><input type="text" name="firstName" required></dd>
 		<dt>Last Name:</dt><dd><input type="text" name="lastName" required></dd>
@@ -75,4 +75,4 @@
 	<input type="submit" value="Register">
 </form>
 
-<?php include 'footer.php' ?>
+<?php include '/footer.php' ?>

@@ -113,5 +113,5 @@
 	} else {
 		printf("Registration successful!");
 	}
-	include 'footer.php';
+	include '/footer.php';
 ?>

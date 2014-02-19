@@ -28,8 +28,8 @@
 		}
 	}
 
-	include 'db_close.php';
+	include '/repair/db_close.php';
 
-	header('Location:repair.php');
+	header('Location:/repair/repair.php');
 ?>
 
