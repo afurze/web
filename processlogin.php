@@ -4,8 +4,8 @@
 	include 'sessionhelpers.php';
 
 	// get form info
-	$username = mysqli_real_escape_string($_POST["username"]);
-	$password = mysqli_real_escape_string($_POST["password"]);
+	$username = mysqli_real_escape_string($db, $_POST["username"]);
+	$password = mysqli_real_escape_string($db, $_POST["password"]);
 
 	// get info from db
 	$userinfo = mysqli_query($db, "SELECT * FROM Users WHERE username='" . $username . "';");
