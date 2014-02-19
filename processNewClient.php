@@ -52,8 +52,8 @@
 	}
 
 	// register new user
-	$newUser = $db->query("INSERT INTO users (clientID, username, hash) VALUES (
-		'".$newClient->clientID)
+	/**$newUser = $db->query("INSERT INTO users (clientID, username, hash) VALUES (
+		'".$newClient->clientID);**/
 	
 	include 'footer.php';
 ?>
