@@ -22,24 +22,24 @@
 	// user does not exist
 	$dbuser = $db->query("SELECT username FROM users WHERE username = '".$username."';");
 	if ($dbuser->num_rows >= 1) {
-		echo "That username is already in use.";
+		printf("That username is already in use.");
 		$error = true;
 	}
 	// passwords match
 	if (!($password === $confirmPassword)) {
-		echo "The passwords you entered did not match.";
+		printf("The passwords you entered did not match.");
 		$error = true;
 	}
 	// client supplied at least one phone number
 	if (!($cellPhone || $workPhone || $homePhone)) {
-		echo "You must supply at least one valid phone number.";
+		printf("You must supply at least one valid phone number.");
 		$error = true;
 	} else {
 		if($cellPhone) {
 			$existingClient = $db->query("SELECT * FROM clients WHERE cellPhone = '".$cellPhone."';");
 			if ($existingClient->num_rows >= 1) {
 				$existingClient->close();
-				echo "Cell phone number already in use.";
+				printf("Cell phone number already in use.");
 				$error = true;
 			}
 		}
@@ -47,7 +47,7 @@
 			$existingClient = $db->query("SELECT * FROM clients WHERE homePhone = '".$homePhone."';");
 			if ($existingClient->num_rows >= 1) {
 				$existingClient->close();
-				echo "Home phone number already in use.";
+				printf("Home phone number already in use.");
 				$error = true;
 			}
 		}
@@ -55,7 +55,7 @@
 			$existingClient = $db->query("SELECT * FROM clients WHERE workPhone = '".$workPhone."';");
 			if ($existingClient->num_rows >= 1) {
 				$existingClient->close();
-				echo "Work phone number already in use.";
+				printf("Work phone number already in use.");
 				$error = true;
 			}
 		}
@@ -86,12 +86,16 @@
 			'".$zip."'
 			);"
 		);
+		if ($db->errno) {
+			printf($db->error);
+		}
+
 		$newClient = $db->query("SELECT clientID FROM clients WHERE 
 			homePhone = '".$homePhone."' AND 
 			cellPhone = '".$cellPhone."' AND 
 			workPhone = '".$workPhone."';");
 		$newClientID = $newClient->fetch_row();
-		$newClientID = $newClientID["clientID"];
+		$newClientID = $newClientID[0];
 		$newClient->close();
 
 		// register new user
@@ -103,7 +107,9 @@
 			'".$username."',
 			'".create_hash($password)."');"
 		);
-		$newUser->close();
+		if ($db->errno) {
+			printf($db->error);
+		}
 	}
 	include 'footer.php';
 ?>

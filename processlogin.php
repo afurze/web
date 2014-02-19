@@ -8,19 +8,20 @@
 	$password = $db->real_escape_string($_POST["password"]);
 
 	// get info from db
-	$userinfo = $db->query("SELECT * FROM Users WHERE username='" . $username . "';");
+	$userinfo = $db->query("SELECT * FROM users WHERE username='" . $username . "';");
 	// error check
 	if (!$userinfo) {
-		echo "Invalid username/password combination!";
+		printf("Invalid username/password combination!");
 	} else {
 		// pull pass
-		$dbpass = $userinfo["password"];
+		$dbpass = $userinfo->fetch_row();
+		$dbpass = $dbpass[3];
 
 		// test for validity
 		if(validate_password($password, $dbpass)) {
-			new_session($username, $userinfo["isAdmin"]);
+			new_session($username, $userinfo[4]);
 		} else {
-			echo "Invalid username/password combination!";
+			printf("Invalid username/password combination!");
 		}
 	}
 
