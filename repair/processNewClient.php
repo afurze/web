@@ -1,7 +1,7 @@
 <?php
-	include 'header.php';
-	include 'db_write_connect.php';
-	include 'PasswordHash.php';
+	include '/repair/restrictedHeader.php';
+	include '/repair/db_write_connect.php';
+	include '/repair/PasswordHash.php';
 
 	// get vars
 	$firstName = $db->real_escape_string($_POST["firstName"]);
@@ -110,6 +110,8 @@
 		if ($db->errno) {
 			printf($db->error);
 		}
+	} else {
+		printf("Registration successful!");
 	}
 	include 'footer.php';
 ?>
