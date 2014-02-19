@@ -30,6 +30,6 @@
 
 	include 'db_close.php';
 
-	header('Location:repair/repair.php');
+	header('Location:repair.php');
 ?>
 
