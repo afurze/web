@@ -18,7 +18,7 @@
 
 		// list appropriate tickets
 		print("<ul>");
-		if($_SESSION["isAdmin"]) == true {
+		if($_SESSION["isAdmin"] == true) {
 			// TODO: all open tickets
 			// TODO: list all open tickets
 		} else {
