@@ -38,7 +38,7 @@
 			$existingClient = $db->query("SELECT * FROM clients WHERE cellPhone = '".$cellPhone."'");
 			if ($existingClient->num_rows >= 1) {
 				$existingClient->close();
-				echo "Cell phone number already in use."
+				echo "Cell phone number already in use.";
 				$error = true;
 			}
 			$existingClient->close();
@@ -47,7 +47,7 @@
 			$existingClient = $db->query("SELECT * FROM clients WHERE homePhone = '".$homePhone."'");
 			if ($existingClient->num_rows >= 1) {
 				$existingClient->close();
-				echo "Home phone number already in use."
+				echo "Home phone number already in use.";
 				$error = true;
 			}
 			$existingClient->close();
@@ -56,7 +56,7 @@
 			$existingClient = $db->query("SELECT * FROM clients WHERE workPhone = '".$workPhone."'");
 			if ($existingClient->num_rows >= 1) {
 				$existingClient->close();
-				echo "Work phone number already in use."
+				echo "Work phone number already in use.";
 				$error = true;
 			}
 			$existingClient->close();
