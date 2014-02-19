@@ -33,11 +33,21 @@
 	if (!($cellPhone || $workPhone || $homePhone)) {
 		echo "You must supply at least one valid phone number.";
 		$error = true;
-	}
-	$existingUser = $db->query("SELECT * FROM clients WHERE ");
-	if ($existingUser) {
-		echo "Client already exists.";
-		$error = true;
+		if($cellPhone) {
+			$existingClient = $db->query("SELECT * FROM clients WHERE cellPhone = '".$cellPhone."'");
+			echo gettype($existingClient);
+			$existingClient->close();
+		}
+		if($homePhone) {
+			$existingClient = $db->query("SELECT * FROM clients WHERE homePhone = '".$homePhone."'");
+
+			$existingClient->close();
+		}
+		if($workPhone) {
+			$existingClient = $db->query("SELECT * FROM clients WHERE workPhone = '".$workPhone."'");
+
+			$existingClient->close();
+		}
 	}
 
 	// register new client
@@ -47,8 +57,6 @@
 			."', '".$homePhone."', '".$cellPhone."', '".$workPhone."', '".$address."', '".
 			$email."', '".$city."', '".$state."', '".$zip."')"
 		);
-		$newClient = $newClient->fetch_array();
-		echo $newClient["clientID"];
 	}
 
 	// register new user
