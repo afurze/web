@@ -31,6 +31,7 @@
             <li><a href="/gallery.php">Gallery</a></li>
 			<li><a href="/projects.php">Projects</a></li>
 			<li><a href="/changelog.php">Change Log</a></li>
+			<li><a href="/repair/index.php">Repairs</a></li>
 		</ul>
 	</div>
 
