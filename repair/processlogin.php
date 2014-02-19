@@ -11,7 +11,6 @@
 	$userinfo = $db->query("SELECT * FROM users WHERE username='" . $username . "';");
 	// error check
 	if (!$userinfo) {
-		printf("Invalid username/password combination!");
 		new_session("", "");
 		$_SESSION["errorMessage"] = "Invalid username/password combination!";
 	} else {
@@ -31,5 +30,6 @@
 	include 'db_close.php';
 
 	header('Location:repair.php');
+	exit();
 ?>
 
