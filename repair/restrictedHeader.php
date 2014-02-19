@@ -32,7 +32,7 @@
 			<li><a href="/projects.php">Projects</a></li>
 			<li><a href="/changelog.php">Change Log</a></li>
 		</ul>	
-		<div id="session_controls">
+		<div id="session_controls" class="session_controls">
 			<ul>
 				<?php 
 					if (session_status() === PHP_SESSION_ACTIVE && $_SESSION["username"] != "") {
