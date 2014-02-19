@@ -12,11 +12,11 @@
 		ga('create', 'UA-40605222-1', 'aspinyshrub.com');
 		ga('send', 'pageview');
 	</script>
-	<link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link href="css/header.css" rel="stylesheet" type="text/css">
-	<link href="css/footer.css" rel="stylesheet" type="text/css">
-	<link href="css/content.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="js/header.js"></script>
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/header.css" rel="stylesheet" type="text/css">
+	<link href="../css/footer.css" rel="stylesheet" type="text/css">
+	<link href="../css/content.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../js/header.js"></script>
 </head>
 <body onload="setCurrent();">
 	<div id="title" class="title">
@@ -37,9 +37,9 @@
 		<ul>
 			<?php 
 				if (session_status() === PHP_SESSION_ACTIVE && $_SESSION["username"] != "") {
-					echo "<li><a href='/repair/logout.php'>Logout</a></li>";
+					echo "<li><a href='logout.php'>Logout</a></li>";
 				} else {
-					echo "<li><a href='/repair/repairlogin.php'>Login</a></li>";
+					echo "<li><a href='repairlogin.php'>Login</a></li>";
 				}
 			?>
 		</ul>

@@ -1,7 +1,7 @@
 <?php 
-	include '/repair/db_read_connect.php';
-	include '/repair/PasswordHash.php';
-	include '/repair/sessionhelpers.php';
+	include 'db_read_connect.php';
+	include 'PasswordHash.php';
+	include 'sessionhelpers.php';
 
 	// get form info
 	$username = $db->real_escape_string($_POST["username"]);
@@ -28,8 +28,8 @@
 		}
 	}
 
-	include '/repair/db_close.php';
+	include 'db_close.php';
 
-	header('Location:/repair/repair.php');
+	header('Location:repair/repair.php');
 ?>
 
