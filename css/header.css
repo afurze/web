@@ -37,7 +37,8 @@ body {
 	list-style-type: none;
 	width: 75%;
 }
-.navigation.session_controls {
+
+.right {
 	float: right;
 }
 

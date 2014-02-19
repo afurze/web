@@ -32,18 +32,14 @@
 			<li><a href="/projects.php">Projects</a></li>
 			<li><a href="/changelog.php">Change Log</a></li>
 			<li><a href="/repair/index.php">Repairs</a></li>
-		</ul>	
-		<div id="session_controls" class="session_controls">
-			<ul>
-				<?php 
-					if (session_status() === PHP_SESSION_ACTIVE && $_SESSION["username"] != "") {
-						echo "<li><a href='logout.php'>Logout</a></li>";
-					} else {
-						echo "<li><a href='repairlogin.php'>Login</a></li>";
-					}
-				?>
-			</ul>
-		</div>
+			<?php 
+				if (session_status() === PHP_SESSION_ACTIVE && $_SESSION["username"] != "") {
+					echo "<li class='right'><a href='logout.php'>Logout</a></li>";
+				} else {
+					echo "<li class='right'><a href='repairlogin.php'>Login</a></li>";
+				}
+			?>
+		</ul>
 	</div>
 
 
