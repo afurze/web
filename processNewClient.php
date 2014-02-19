@@ -1,6 +1,7 @@
 <?php
 	include 'header.php';
 	include 'db_write_connect.php';
+	include 'PasswordHash.php';
 
 	// get vars
 	$firstName = $db->real_escape_string($_POST["firstName"]);
@@ -20,7 +21,7 @@
 	$error = false;
 	// user does not exist
 	$dbuser = $db->query("SELECT username FROM users WHERE username = '".$username."';");
-	if ($dbuser) {
+	if ($dbuser->num_rows >= 1) {
 		echo "That username is already in use.";
 		$error = true;
 	}
@@ -85,12 +86,13 @@
 			'".$zip."'
 			);"
 		);
-		$newClientID = $db->query("SELECT clientID FROM clients WHERE 
+		$newClient = $db->query("SELECT clientID FROM clients WHERE 
 			homePhone = '".$homePhone."' AND 
 			cellPhone = '".$cellPhone."' AND 
 			workPhone = '".$workPhone."';");
-		$newClientID = $db->fetch_row();
+		$newClientID = $newClient->fetch_row();
 		$newClientID = $newClientID["clientID"];
+		$newClient->close();
 
 		// register new user
 		$newUser = $db->query("INSERT INTO users (
@@ -101,6 +103,7 @@
 			'".$username."',
 			'".create_hash($password)."');"
 		);
+		$newUser->close();
 	}
 	include 'footer.php';
 ?>
