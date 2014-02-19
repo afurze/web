@@ -3,19 +3,19 @@
 	include 'db_write_connect.php';
 
 	// get vars
-	$firstName = mysqli_real_escape_string($_POST["firstName"]);
-	$lastName = mysqli_real_escape_string($_POST["lastName"]);
-	$homePhone = mysqli_real_escape_string($_POST["homePhone"]);
-	$cellPhone = mysqli_real_escape_string($_POST["cellPhone"]);
-	$workPhone = mysqli_real_escape_string($_POST["workPhone"]);
-	$address = mysqli_real_escape_string($_POST["address"]);
-	$city = mysqli_real_escape_string($_POST["city"]);
-	$state = mysqli_real_escape_string($_POST["state"].value);
-	$zip = mysqli_real_escape_string($_POST["zip"]);
-	$email = mysqli_real_escape_string($_POST["email"]);
-	$username = mysqli_real_escape_string($_POST["username"]);
-	$password = mysqli_real_escape_string($_POST["password"]);
-	$confirmPassword = mysqli_real_escape_string($_POST["confirmPassword"]);
+	$firstName = mysqli_real_escape_string($db, $_POST["firstName"]);
+	$lastName = mysqli_real_escape_string($db,$_POST["lastName"]);
+	$homePhone = mysqli_real_escape_string($db,$_POST["homePhone"]);
+	$cellPhone = mysqli_real_escape_string($db,$_POST["cellPhone"]);
+	$workPhone = mysqli_real_escape_string($db,$_POST["workPhone"]);
+	$address = mysqli_real_escape_string($db,$_POST["address"]);
+	$city = mysqli_real_escape_string($db, $_POST["city"]);
+	$state = mysqli_real_escape_string($db, $_POST["state"].value);
+	$zip = mysqli_real_escape_string($db, $_POST["zip"]);
+	$email = mysqli_real_escape_string($db, $_POST["email"]);
+	$username = mysqli_real_escape_string($db, $_POST["username"]);
+	$password = mysqli_real_escape_string($db, $_POST["password"]);
+	$confirmPassword = mysqli_real_escape_string($db, $_POST["confirmPassword"]);
 
 	//TODO: error checking
 	// user does not exist
