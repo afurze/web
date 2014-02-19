@@ -85,21 +85,22 @@
 			'".$zip."'
 			);"
 		);
-	}
-	$newClientID = $db->query("SELECT clientID FROM clients WHERE 
-		homePhone = '".$homePhone."' AND 
-		cellPhone = '".$cellPhone."' AND 
-		workPhone = '".$workPhone."';");
+		$newClientID = $db->query("SELECT clientID FROM clients WHERE 
+			homePhone = '".$homePhone."' AND 
+			cellPhone = '".$cellPhone."' AND 
+			workPhone = '".$workPhone."';");
+		$newClientID = $db->fetch_row();
+		$newClientID = $newClientID["clientID"];
 
-	// register new user
-	$newUser = $db->query("INSERT INTO users (
-		clientID, 
-		username, 
-		hash) VALUES (
-		'".$newClientID."',
-		'".$username."',
-		'".create_hash($password)."');
-		");
-	
+		// register new user
+		$newUser = $db->query("INSERT INTO users (
+			clientID, 
+			username, 
+			hash) VALUES (
+			'".$newClientID."',
+			'".$username."',
+			'".create_hash($password)."');"
+		);
+	}
 	include 'footer.php';
 ?>
