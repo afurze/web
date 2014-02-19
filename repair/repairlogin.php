@@ -1,5 +1,6 @@
 <?php include 'restrictedHeader.php' ?>
 <?php 
+	session_start();
 	if (session_status() === PHP_SESSION_ACTIVE && $_SESSION["username"] != "") {
 		printf('<p>Already logged in!</p>');
 	} elseif (session_status() === PHP_SESSION_ACTIVE && $_SESSION["errorMessage"] != "") {

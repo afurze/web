@@ -36,6 +36,7 @@
 	<div id="session_controls">
 		<ul>
 			<?php 
+				session_start();
 				if (session_status() === PHP_SESSION_ACTIVE && $_SESSION["username"] != "") {
 					echo "<li><a href='logout.php'>Logout</a></li>";
 				} else {
