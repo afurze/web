@@ -1,12 +1,11 @@
 <?php 
 	include 'db_read_connect.php';
 	include 'PasswordHash.php';
+	include 'sessionhelpers.php';
 
 	// get form info
-	$username = $_POST["username"];
-	$password = $_POST["password"];
-
-	//TODO: sanitize user input
+	$username = mysqli_real_escape_string($_POST["username"]);
+	$password = mysqli_real_escape_string($_POST["password"]);
 
 	// get info from db
 	$userinfo = mysqli_query($db, "SELECT * FROM Users WHERE username='" . $username . "';");
@@ -18,7 +17,11 @@
 		$dbpass = $userinfo["password"];
 
 		// test for validity
-		$validUser = validate_password($password, $dbpass);
+		if(validate_password($password, $dbpass)) {
+			new_session($username, $userinfo["isAdmin"]);
+		} else {
+			echo "Invalid username/password combination!";
+		}
 	}
 
 	include 'db_close.php';
