@@ -33,6 +33,7 @@
 	if (!($cellPhone || $workPhone || $homePhone)) {
 		echo "You must supply at least one valid phone number.";
 		$error = true;
+	} else {
 		if($cellPhone) {
 			$existingClient = $db->query("SELECT * FROM clients WHERE cellPhone = '".$cellPhone."'");
 			echo gettype($existingClient);
