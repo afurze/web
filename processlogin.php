@@ -14,8 +14,8 @@
 		printf("Invalid username/password combination!");
 	} else {
 		// pull pass
-		$dbpass = $userinfo->fetch_row();
-		$dbpass = $dbpass[3];
+		$userinfo = $userinfo->fetch_row();
+		$dbpass = $userinfo[3];
 
 		// test for validity
 		if(validate_password($password, $dbpass)) {
