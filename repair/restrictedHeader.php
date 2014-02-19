@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
+<?php include 'sessionhelpers.php' ?>
 <head>
 	<title>Furze: a spiny European shrub</title>
 	<script type="text/javascript">
@@ -36,7 +36,6 @@
 	<div id="session_controls">
 		<ul>
 			<?php 
-				session_start();
 				if (session_status() === PHP_SESSION_ACTIVE && $_SESSION["username"] != "") {
 					echo "<li><a href='logout.php'>Logout</a></li>";
 				} else {

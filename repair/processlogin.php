@@ -2,7 +2,6 @@
 	include 'db_read_connect.php';
 	include 'PasswordHash.php';
 	include 'sessionhelpers.php';
-	session_start();
 
 	// get form info
 	$username = $db->real_escape_string($_POST["username"]);

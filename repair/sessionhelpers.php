@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	/** 
 	* Check for active session 
 	* Return true for existing
