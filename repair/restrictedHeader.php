@@ -34,9 +34,10 @@
 			<li><a href="/repair/index.php">Repairs</a></li>
 			<?php 
 				if (session_status() === PHP_SESSION_ACTIVE && $_SESSION["username"] != "") {
-					echo "<li style='float:right'><a href='logout.php'>Logout</a></li>";
+					printf("<li style='float:right'>".$_SESSION["username"]."</li>");
+					printf("<li style='float:right'><a href='logout.php'>Logout</a></li>");
 				} else {
-					echo "<li style='float:right'><a href='repairlogin.php'>Login</a></li>";
+					printf("<li style='float:right'><a href='repairlogin.php'>Login</a></li>");
 				}
 			?>
 		</ul>
