@@ -28,10 +28,7 @@
 			<li><a href="/index.php">Home</a></li>
 			<li><a href="/about.php">About</a></li>
 			<li><a href="/contact.php">Contact</a></li>
-            <li><a href="/gallery.php">Gallery</a></li>
-			<li><a href="/projects.php">Projects</a></li>
-			<li><a href="/changelog.php">Change Log</a></li>
-			<li><a href="/repair/index.php">Repairs</a></li>
+			<li><a href="/repair/index.php">Repair Central</a></li>
 			<?php 
 				if (session_status() === PHP_SESSION_ACTIVE && $_SESSION["username"] != "") {
 					printf("<li style='float:right'>".$_SESSION["username"]."</li>");
