@@ -4,7 +4,7 @@
 
 <p>I am now going to be offering repair services for Windows laptops only.</p>
 <p>Areas in which I can assist include:</p>
-<ul>
+<ul class="list">
 	<li>Select hardware diagnostics and replacement</li>
 	<li>RAM (memory) upgrades</li>
 	<li>Hard Drive replacement</li>
@@ -18,7 +18,7 @@
 <p>
 	If you are interested in my services, please <a href="contact.php">contact me</a> by email.
 	When you do so, please include "repair" in the subject line, and provide information including:
-	<ul>
+	<ul class="list">
 		<li>
 			To the best of your ability, provide make and model number of your laptop (note: this
 			information is typically found on the bottom of the laptop or possibly under the battery)
