@@ -8,6 +8,7 @@
 		<dt>Last Name:</dt><dd><input type="text" name="lastName"></dd>
 		<dt>Phone Number:</dt><dd><input type="number" name="phone" size="10" pattern=".{10}"></dd>
 	</dl>
+	<input type="Submit" value="Search">
 </form>
 
 <?php include '../footer.php' ?>
