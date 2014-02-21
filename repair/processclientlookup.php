@@ -57,6 +57,7 @@
 	$queryResult = $db->query($query);
 
 	// print results
+	$rows = array();
 	while($row = $queryResult->fetch_array()) {
 		$rows[] = $row;
 	}
