@@ -56,16 +56,21 @@
 	// submit query
 	$queryResult = $db->query($query);
 
-	// print results
-	$rows = array();
-	while($row = $queryResult->fetch_array()) {
-		$rows[] = $row;
-	}
-	foreach ($rows as $row) {
-		foreach ($row as $key => $value) {
-			echo $key . ": " . $value;
+	// check if any results returned
+	if ($queryResult->num_rows > 0) {
+		// print results
+		$rows = array();
+		while($row = $queryResult->fetch_array()) {
+			$rows[] = $row;
 		}
-		echo '<br />';
+		foreach ($rows as $row) {
+			foreach ($row as $key => $value) {
+				echo $key . ": " . $value;
+			}
+			echo '<br />';
+		}
+	} else {
+		echo "No results found.";
 	}
 
 	// close results
