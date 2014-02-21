@@ -10,7 +10,7 @@
 	$phone = $db->real_escape_string($_POST["phone"]);
 
 	// check if enough parameters were provided
-	if (!($clientID) && !($firstName && $lastName) && !($phone)) 
+	if (!($clientID) && !($firstName && $lastName) && !($phone)) {
 		// die
 		printf("Invalid search parameters.");
 		exit();
@@ -27,7 +27,7 @@
 	if ($firstName) {
 		// add first name
 		if ($moreThanOneParam) {
-			$query = $query . " AND firstName='" . $firstname ."'"
+			$query = $query . " AND firstName='" . $firstname . "'";
 		} else {
 			$query = $query . " " . $firstName;
 			$moreThanOneParam = true;
@@ -46,10 +46,10 @@
 		// add phone
 		if ($moreThanOneParam) {
 			$query = $query . " AND (homePhone='" . $phone . "' OR cellPhone='" . $phone .
-				"OR workPhone='" . $phone "')";
+				"OR workPhone='" . $phone . "')";
 		} else {
 			$query = $query . "homePhone='" . $phone . "' OR cellPhone='" . $phone .
-				"OR workPhone='" . $phone "'";
+				"OR workPhone='" . $phone . "'";
 		}
 	}
 
