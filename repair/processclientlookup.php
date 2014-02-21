@@ -55,20 +55,20 @@
 
 	// submit query
 	$queryResult = $db->query($query);
-	// get results
-	$results = $queryResult->fetch_all();
-	// close results
-	$queryResult->close();
 
 	// print results
-	for ($i=0; $i < count($results); $i++) { 
-		// for now just print them, dont format
-		for ($j=0; $j < count($results[$i]); $j++) { 
-			echo $results[$i][$j];
+	while($row = $queryResult->fetch_array()) {
+		$rows[] = $row;
+	}
+	foreach ($rows as $row) {
+		foreach ($row as $key => $value) {
+			echo $key . ": " . $value;
 		}
-		// print new line
 		echo '<br />';
 	}
+
+	// close results
+	$queryResult->close();
 ?>
 
 <?php include 'db_close.php' ?>
