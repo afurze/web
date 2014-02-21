@@ -48,8 +48,8 @@
 			$query = $query . " AND (homePhone='" . $phone . "' OR cellPhone='" . $phone .
 				"OR workPhone='" . $phone . "')";
 		} else {
-			$query = $query . "homePhone='" . $phone . "' OR cellPhone='" . $phone .
-				"OR workPhone='" . $phone . "'";
+			$query = $query . " homePhone='" . $phone . "' OR cellPhone='" . $phone .
+				"' OR workPhone='" . $phone . "'";
 		}
 	}
 
