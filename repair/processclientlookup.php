@@ -59,7 +59,7 @@
 	// check if any results returned
 	if ($queryResult->num_rows > 0) {
 		// print results
-		printf('<dl>');
+		printf('<dl class="searchResult">');
 		$rows = array();
 		while($row = $queryResult->fetch_array()) {
 			$rows[] = $row;
