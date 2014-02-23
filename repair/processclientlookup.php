@@ -59,16 +59,17 @@
 	// check if any results returned
 	if ($queryResult->num_rows > 0) {
 		// print results
+		printf('<dl>');
 		$rows = array();
 		while($row = $queryResult->fetch_array()) {
 			$rows[] = $row;
 		}
 		foreach ($rows as $row) {
 			foreach ($row as $key => $value) {
-				echo $key . ": " . $value;
+				printf("<df>" . $key . "</df><dd>" . $value . "</dd>";
 			}
-			echo '<br />';
 		}
+		printf('</dl>');
 	} else {
 		echo "No results found.";
 	}
