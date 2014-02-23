@@ -69,7 +69,7 @@
 				if (!(gettype($key) === "integer")) { // check for duplicate pairs
 					if ($value != "") { // for non-empty values
 						printf("<dt>" . $key . "</dt><dd>" . $value . "</dd>");
-					} elseif ((!(stristr($key, 'phone') === false) && $value === "0") || $value === "") { // check for bad values
+					} elseif ($value === "0" || $value === "") { // check for bad values
 						printf("<dt>" . $key . "</dt><dd style='clear:both'></dd>");
 					}
 				}
