@@ -100,8 +100,10 @@ a:visited {
 	background-repeat: no-repeat;
 	background-position: -240px -91px;
 }
-.searchResult dd {
-	
+.searchResult dt {
+	float:left;
+	clear:both;
+	width:10%;
 }
 .socialmedia ul li {
 	float: left;
