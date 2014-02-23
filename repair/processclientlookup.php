@@ -66,8 +66,12 @@
 		}
 		foreach ($rows as $row) {
 			foreach ($row as $key => $value) {
-				if (!(gettype($key) === "integer")) {
-					printf("<dt>" . $key . "</dt><dd>" . $value . "</dd>");
+				if (!(gettype($key) === "integer")) { // check for duplicate pairs
+					if ($value != "") { // for non-empty values
+						printf("<dt>" . $key . "</dt><dd>" . $value . "</dd>");
+					} elseif ((stristr($key, 'phone') === true && $value === '0') || $value === "") { // check for bad values
+						printf("<dt>" . $key . "</dt><dd style='clear:both'></dd>");
+					}
 				}
 			}
 		}
