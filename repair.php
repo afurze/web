@@ -2,7 +2,7 @@
 
 <h2>Computer Repair</h2>
 
-<p>I am now going to be offering repair services for Windows laptops only.</p>
+<p>I am now going to be offering repair services for Windows laptops only, near Golden, CO.</p>
 <p>Areas in which I can assist include:</p>
 <ul class="list">
 	<li>Select hardware diagnostics and replacement</li>
