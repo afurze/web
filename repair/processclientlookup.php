@@ -10,7 +10,7 @@
 	$phone = $db->real_escape_string($_POST["phone"]);
 
 	// check if enough parameters were provided
-	if (!($clientID) && !($firstName && $lastName) && !($phone)) {
+	if (!($clientID) && !($firstName === "" && $lastName === "") && !($phone)) {
 		// die
 		printf("Invalid search parameters.");
 		exit();
