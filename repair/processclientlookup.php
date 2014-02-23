@@ -67,7 +67,7 @@
 		foreach ($rows as $row) {
 			foreach ($row as $key => $value) {
 				if (!(gettype($key) === "integer")) {
-					printf("<df>" . $key . "</df><dd>" . $value . "</dd>");
+					printf("<dt>" . $key . "</dt><dd>" . $value . "</dd>");
 				}
 			}
 		}
