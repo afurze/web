@@ -11,7 +11,7 @@
 	$serial = $db->real_escape_string($_POST["serial"]);
 	$purchaseDate = $db->real_escape_string($_POST["purchaseDate"]);
 	// format date
-	$purchaseDate = date('Y-m-d', strtotime(str_replace('-', '/', $purchaseDate)))
+	$purchaseDate = date('Y-m-d', strtotime(str_replace('-', '/', $purchaseDate)));
 
 	// check that a valid client ID is provided
 	$query = "SELECT * FROM clients WHERE clientID='" . $clientID . "'";
