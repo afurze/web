@@ -10,7 +10,7 @@
 		if($_SESSION["isAdmin"] == true) {
 			printf("<li><a href='addclient.php'>Add Client</a></li>");
 			printf("<li><a href='lookupclient.php'>Lookup Client</a></li>");
-			printf("<li><a href='lookupticket.php>Lookup Ticket</a></li>");
+			printf("<li><a href='lookupticket.php'>Lookup Ticket</a></li>");
 			printf("<li><a href='addcomputer.php'>Add Computer</a></li>");
 		} else {
 			printf("<li><a href='mytickets.php'>My Tickets</a></li>");
