@@ -1,7 +1,8 @@
-<?php 
-	include 'restricted.php';
-	include 'restrictedHeader.php';
-	include 'db_write_connect.php';
+<?php include 'restricted.php' ?>
+<?php include 'restrictedHeader.php' ?>
+<?php include 'db_write_connect.php' ?>
+
+<?php
 
 	// get vars
 	$clientID = $db->real_escape_string($_POST["clientID"]);
@@ -41,9 +42,8 @@
 		} else {
 			printf("Successfully registered new computer.");
 		}
+		$newComputer = $db->query($query);
 	}
 ?>
-<?
-	include 'db_close.php';
-	include '../footer.php';
-?>
+<? include 'db_close.php' ?>
+<? include '../footer.php' ?>
