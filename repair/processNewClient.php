@@ -1,4 +1,5 @@
 <?php
+	include 'restricted.php';
 	include 'restrictedHeader.php';
 	include 'db_write_connect.php';
 	include 'PasswordHash.php';
