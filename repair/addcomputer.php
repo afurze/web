@@ -12,4 +12,4 @@
 	<input type="submit" value="Add">
 </form>
 
-<?php include 'footer.php' ?>
+<?php include '../footer.php' ?>
