@@ -42,6 +42,8 @@
 			printf("Successfully registered new computer.");
 		}
 	}
-
+?>
+<?
+	include 'db_close.php';
 	include '../footer.php';
 ?>
