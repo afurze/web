@@ -5,11 +5,22 @@
 <p>I am now going to be offering repair services for Windows laptops only, near Golden, CO.</p>
 <p>Areas in which I can assist include:</p>
 <ul class="list">
-	<li>Select hardware diagnostics and replacement</li>
-	<li>RAM (memory) upgrades</li>
-	<li>Hard Drive replacement</li>
-	<li>Operating system restores</li>
-	<li>Virus/malware/infection scans/removals</li>
+	<li>Consultations: free (discuss issues, fixes, etc.)</li>
+	<li>
+		Diagnostics: $10, refundable if I am unable to fix your unit or you elect
+		to have it repaired
+	</li>
+	<li>Software Installation: $10 - $20 (depending on software)</li>
+	<li>Infection Removal: $20 - $50 (depending on severity of infection)</li>
+	<li>Operating System Restore: $75</li>
+	<li>Hardware Replacement/upgrade: depends on issue, not to exceed $75 per item
+	<li>
+		Additional Services:
+		<ul>
+			<li>Password Resets: $15</li>
+			<li>Speed up slow computers: $50</li>
+		</ul>
+	</li>
 </ul>
 <p>
 	If you do not see your issue on this list, or are unsure of your issue, I may still be
