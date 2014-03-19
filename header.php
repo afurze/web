@@ -3,6 +3,11 @@
 
 <head>
 	<title>Furze: a spiny European shrub</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/header.css" rel="stylesheet" type="text/css">
+	<link href="css/footer.css" rel="stylesheet" type="text/css">
+	<link href="css/content.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/header.js"></script>
 	<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -12,11 +17,6 @@
 		ga('create', 'UA-40605222-1', 'aspinyshrub.com');
 		ga('send', 'pageview');
 	</script>
-	<link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link href="css/header.css" rel="stylesheet" type="text/css">
-	<link href="css/footer.css" rel="stylesheet" type="text/css">
-	<link href="css/content.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="js/header.js"></script>
 </head>
 <body onload="setCurrent();">
 	<div id="title" class="title">
