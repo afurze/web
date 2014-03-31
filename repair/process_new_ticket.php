@@ -6,6 +6,7 @@
 	// get vars
 	$clientID = $db->real_escape_string($_POST["clientID"]);
 	$purpose = $db->real_escape_string($_POST["purpose"].value);
+	printf($purpose);
 	$notes = $db->real_escape_string($_POST["notes"]);
 
 	// create vars
