@@ -1,6 +1,6 @@
 <?php
 	include_once 'restricted.php';
-	include_once 'restrictedHeader.php';
+	include_once 'restricted_header.php';
 	include_once 'db_write_connect.php';
 
 	// get vars

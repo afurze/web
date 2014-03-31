@@ -1,7 +1,7 @@
-<?php include 'restricted.php' ?>
-<?php include 'restrictedHeader.php' ?>
+<?php include_once 'restricted.php' ?>
+<?php include_once 'restricted_header.php' ?>
 
-<form action="processNewComputer.php" method="post">
+<form action="process_new_computer.php" method="post">
 	<dl>
 		<dt>Client ID:</dt><dd><input type="number" name="clientID" required></dd>
 		<dt>Manufacturer:</dt><dd><input type="text" name="manufacturer" required></dd>
@@ -12,4 +12,4 @@
 	<input type="submit" value="Add">
 </form>
 
-<?php include '../footer.php' ?>
+<?php include_once '../footer.php' ?>

@@ -1,6 +1,6 @@
-<?php include 'restricted.php' ?>
-<?php include 'restrictedHeader.php' ?>
-<form action='processNewTicket.php' method="post">
+<?php include_once 'restricted.php' ?>
+<?php include_once 'restricted_header.php' ?>
+<form action='process_new_ticket.php' method="post">
 	<dl>
 		<dt>Client ID:</dt><dd><input type="number" name="clientID" required></dd>
 		<dt>Purpose:</dt>
@@ -24,4 +24,4 @@
 	<input type="submit" value="Add">
 </form>
 
-<?php include '../footer.php' ?>
+<?php include_once '../footer.php' ?>

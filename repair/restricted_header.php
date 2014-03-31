@@ -1,4 +1,4 @@
-<?php include 'sessionHelpers.php' ?>
+<?php include_once 'session_helpers.php' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -34,7 +34,7 @@
 					printf("<li style='float:right'>".$_SESSION["username"]."</li>");
 					printf("<li style='float:right'><a href='logout.php'>Logout</a></li>");
 				} else {
-					printf("<li style='float:right'><a href='repairlogin.php'>Login</a></li>");
+					printf("<li style='float:right'><a href='repair_login.php'>Login</a></li>");
 				}
 			?>
 		</ul>

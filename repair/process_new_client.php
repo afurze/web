@@ -1,6 +1,6 @@
 <?php
 	include_once 'restricted.php';
-	include_once 'restrictedHeader.php';
+	include_once 'restricted_header.php';
 	include_once 'db_write_connect.php';
 	include_once 'PasswordHash.php';
 
@@ -114,5 +114,5 @@
 	} else {
 		printf("Registration successful!");
 	}
-	include '../footer.php';
+	include_once '../footer.php';
 ?>

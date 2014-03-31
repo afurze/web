@@ -1,7 +1,7 @@
-<?php include 'restricted.php' ?>
-<?php include 'restrictedHeader.php' ?>
+<?php include_once 'restricted.php' ?>
+<?php include_once 'restricted_header.php' ?>
 
-<form action="processClientLookup.php" method="post">
+<form action="process_client_lookup.php" method="post">
 	<dl>
 		<dt>Client ID:</dt><dd><input type="number" name="clientID" size="11" maxlength="11"></dd>
 		<dt>First Name:</dt><dd><input type="text" name="firstName"></dd>
@@ -11,4 +11,4 @@
 	<input type="Submit" value="Search">
 </form>
 
-<?php include '../footer.php' ?>
+<?php include_once '../footer.php' ?>

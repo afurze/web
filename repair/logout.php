@@ -1,8 +1,8 @@
 <?php
-	include 'sessionHelpers.php';
+	include_once 'session_helpers.php';
 
 	new_session("", "");
 
-	header('Location:repairlogin.php');
+	header('Location:repair_login.php');
 	exit();
 ?>

@@ -1,6 +1,6 @@
-<?php include 'restricted.php' ?>
-<?php include 'restrictedHeader.php' ?>
-<form action="processNewClient.php" method="post">
+<?php include_once 'restricted.php' ?>
+<?php include_once 'restricted_header.php' ?>
+<form action="process_new_client.php" method="post">
 	<dl>
 		<dt>First Name:</dt><dd><input type="text" name="firstName" required></dd>
 		<dt>Last Name:</dt><dd><input type="text" name="lastName" required></dd>
@@ -75,4 +75,4 @@
 	<input type="submit" value="Register">
 </form>
 
-<?php include '../footer.php' ?>
+<?php include_once '../footer.php' ?>

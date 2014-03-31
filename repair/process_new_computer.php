@@ -1,6 +1,6 @@
-<?php include 'restricted.php' ?>
-<?php include 'restrictedHeader.php' ?>
-<?php include 'db_write_connect.php' ?>
+<?php include_once 'restricted.php' ?>
+<?php include_once 'restricted_header.php' ?>
+<?php include_once 'db_write_connect.php' ?>
 
 <?php
 

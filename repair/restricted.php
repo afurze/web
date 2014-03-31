@@ -1,8 +1,8 @@
 <?php
-	include 'sessionHelpers.php';
+	include_once 'session_helpers.php';
 	
 	if(!(active_session() && $_SESSION["username"])) {
-		header('Location:repairLogin.php');
+		header('Location:repair_login.php');
 		exit();
 	}
 ?>

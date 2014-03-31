@@ -1,6 +1,6 @@
-<?php include 'restricted.php' ?>
-<?php include 'restrictedHeader.php' ?>
-<?php include 'db_read_connect.php' ?>
+<?php include_once 'restricted.php' ?>
+<?php include_once 'restricted_header.php' ?>
+<?php include_once 'db_read_connect.php' ?>
 
 <div id="repairnav" class="repairnav">
 	<?php
@@ -8,14 +8,14 @@
 		printf("<h2>Welcome ".$_SESSION["username"]."</h2>");
 		printf("<ul>");
 		if($_SESSION["isAdmin"] == true) {
-			printf("<li><a href='addClient.php'>Add Client</a></li>");
-			printf("<li><a href='addComputer.php'>Add Computer</a></li>");
-			printf("<li><a href='addTicket.php'>Add Ticket</a></li>");
-			printf("<li><a href='lookupClient.php'>Lookup Client</a></li>");
-			printf("<li><a href='lookupTicket.php'>Lookup Ticket</a></li>");
+			printf("<li><a href='add_client.php'>Add Client</a></li>");
+			printf("<li><a href='add_computer.php'>Add Computer</a></li>");
+			printf("<li><a href='add_ticket.php'>Add Ticket</a></li>");
+			printf("<li><a href='lookup_client.php'>Lookup Client</a></li>");
+			printf("<li><a href='lookup_ticket.php'>Lookup Ticket</a></li>");
 
 		} else {
-			printf("<li><a href='myTickets.php'>My Tickets</a></li>");
+			printf("<li><a href='my_tickets.php'>My Tickets</a></li>");
 		}
 		printf("</ul>");
 
@@ -30,5 +30,5 @@
 		}
 	?>
 </div>
-<?php include 'db_close.php' ?>
-<?php include '../footer.php' ?>
+<?php include_once 'db_close.php' ?>
+<?php include_once '../footer.php' ?>

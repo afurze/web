@@ -1,6 +1,6 @@
-<?php include 'restricted.php' ?>
-<?php include 'restrictedHeader.php' ?>
-<?php include 'db_read_connect.php' ?>
+<?php include_once 'restricted.php' ?>
+<?php include_once 'restricted_header.php' ?>
+<?php include_once 'db_read_connect.php' ?>
 
 <?php 
 	// get lookup parameters
@@ -86,5 +86,5 @@
 	$queryResult->close();
 ?>
 
-<?php include 'db_close.php' ?>
-<?php include '../footer.php' ?>
+<?php include_once 'db_close.php' ?>
+<?php include_once '../footer.php' ?>
