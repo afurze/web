@@ -12,7 +12,7 @@
 	$workPhone = $db->real_escape_string($_POST["workPhone"]);
 	$address =$db->real_escape_string($_POST["address"]);
 	$city = $db->real_escape_string($_POST["city"]);
-	$state = $db->real_escape_string($_POST["state"].value);
+	$state = $db->real_escape_string($_POST["state"]);
 	$zip = $db->real_escape_string($_POST["zip"]);
 	$email = $db->real_escape_string($_POST["email"]);
 	$username = $db->real_escape_string ($_POST["username"]);
