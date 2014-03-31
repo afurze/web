@@ -5,7 +5,7 @@
 		<dt>Client ID:</dt><dd><input type="number" name="clientID" required></dd>
 		<dt>Purpose:</dt>
 		<dd>
-			<select>
+			<select name="purpose">
 				<option value="">Select one...</option>
 				<option value="Diag">Diagnostic</option>
 				<option value="HW">Hardware</option>
