@@ -9,7 +9,7 @@
 	$notes = $db->real_escape_string($_POST["notes"]);
 
 	// create vars
-	$createdDate = date('Y-m-d');
+	$createdDate = date('Y-m-d H:i:s');
 	$status = "AwaitingStart";
 
 	// check that a valid client ID is provided
