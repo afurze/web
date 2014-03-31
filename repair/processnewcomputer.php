@@ -44,8 +44,7 @@
 		} else {
 			printf("Successfully registered new computer.");
 		}
-		$newComputer = $db->query($query);
 	}
 ?>
-<? include 'db_close.php' ?>
-<? include '../footer.php' ?>
+<? include_once 'db_close.php' ?>
+<? include_once '../footer.php' ?>

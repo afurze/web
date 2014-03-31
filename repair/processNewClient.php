@@ -1,8 +1,8 @@
 <?php
-	include 'restricted.php';
-	include 'restrictedHeader.php';
-	include 'db_write_connect.php';
-	include 'PasswordHash.php';
+	include_once 'restricted.php';
+	include_once 'restrictedHeader.php';
+	include_once 'db_write_connect.php';
+	include_once 'PasswordHash.php';
 
 	// get vars
 	$firstName = $db->real_escape_string($_POST["firstName"]);
