@@ -34,7 +34,7 @@
 			'" . $createdDate . "',
 			'" . $status . "',
 			'" . $notes . "',
-			'" . $purpose . "',
+			'" . $purpose . "'
 			);";
 		$newTicket = $db->query($query);
 		if ($db->errno) {
