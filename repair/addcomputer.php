@@ -1,7 +1,7 @@
 <?php include 'restricted.php' ?>
 <?php include 'restrictedHeader.php' ?>
 
-<form action="processnewcomputer.php" method="post">
+<form action="processNewComputer.php" method="post">
 	<dl>
 		<dt>Client ID:</dt><dd><input type="number" name="clientID" required></dd>
 		<dt>Manufacturer:</dt><dd><input type="text" name="manufacturer" required></dd>

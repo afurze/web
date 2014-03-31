@@ -1,7 +1,7 @@
 <?php include 'restricted.php' ?>
 <?php include 'restrictedHeader.php' ?>
 
-<form action="processclientlookup.php" method="post">
+<form action="processClientLookup.php" method="post">
 	<dl>
 		<dt>Client ID:</dt><dd><input type="number" name="clientID" size="11" maxlength="11"></dd>
 		<dt>First Name:</dt><dd><input type="text" name="firstName"></dd>

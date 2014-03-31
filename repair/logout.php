@@ -1,5 +1,5 @@
 <?php
-	include 'sessionhelpers.php';
+	include 'sessionHelpers.php';
 
 	new_session("", "");
 

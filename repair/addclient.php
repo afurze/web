@@ -12,7 +12,7 @@
 		<dt>City:</dt><dd><input type="text" name="city"></dd>
 		<dt>State:</dt>
 		<dd>
-			<select>
+			<select name="state">
 				<option value="">Select one...</option>
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
