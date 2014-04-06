@@ -79,7 +79,7 @@
 			}
 		}
 		// add lookup links
-		printf('<form action="process_computer_lookup.php>');
+		printf('<form action="process_computer_lookup.php">');
 		printf('<input type="hidden" name="clientID" value="' . $clientID . '">');
 		printf('<input type="Submit" value="Lookup Computers">');
 		printf('</form>');
