@@ -78,11 +78,18 @@
 				}
 			}
 		}
-		// add lookup links
-		printf('<form action="process_computer_lookup.php">');
+		// add computer lookup
+		printf('<form action="process_computer_lookup.php" method="post">');
 		printf('<input type="hidden" name="clientID" value="' . $clientID . '">');
 		printf('<input type="Submit" value="Lookup Computers">');
 		printf('</form>');
+
+		// add ticket lookup
+		printf('<form action="process_ticket_lookup.php" method="post">');
+		printf('<input type="hidden" name="clientID" value="' . $clientID . '">');
+		printf('<input type="Submit" value="Lookup Computers">');
+		printf('</form>');
+
 		printf('</dl>');
 	} else {
 		echo "No results found.";
