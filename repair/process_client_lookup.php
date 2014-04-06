@@ -72,11 +72,17 @@
 					} elseif ($value === "") { // check for bad values
 						printf("<dt>" . $key . "</dt><dd style='clear:both'></dd>");
 					} else {
+						if ($key === "clientID") $clientID = $value;
 						printf("<dt>" . $key . "</dt><dd>" . $value . "</dd>");
 					}
 				}
 			}
 		}
+		// add lookup links
+		printf('<form action="process_computer_lookup.php>');
+		printf('<input type="hidden" name="clientID" value="' . $clientID . '">');
+		printf('<input type="Submit" value="Lookup Computers">');
+		printf('</form>');
 		printf('</dl>');
 	} else {
 		echo "No results found.";
