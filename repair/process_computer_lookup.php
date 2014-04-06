@@ -40,7 +40,7 @@
 				}
 			}
 		}
-		print('</dl');
+		printf('</dl>');
 	} else {
 		echo "No results found.";
 	}
