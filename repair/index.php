@@ -12,6 +12,7 @@
 			printf("<li><a href='add_computer.php'>Add Computer</a></li>");
 			printf("<li><a href='add_ticket.php'>Add Ticket</a></li>");
 			printf("<li><a href='lookup_client.php'>Lookup Client</a></li>");
+			printf("<li><a href='lookup_computer.php'>Lookup Computer</a></li>");
 			printf("<li><a href='lookup_ticket.php'>Lookup Ticket</a></li>");
 
 		} else {
