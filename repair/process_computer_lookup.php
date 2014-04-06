@@ -17,7 +17,7 @@
 	$query = "SELECT * FROM computers WHERE clientID='" . $clientID . "'";
 
 	// submit query
-	$queryREsult = $db->query($query);
+	$queryResult = $db->query($query);
 
 	// check if any results returned
 	if ($queryResult->num_rows > 0) {
