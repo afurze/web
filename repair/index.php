@@ -18,7 +18,9 @@
 
 			printf("<h3>System Activities</h3>");
 			printf("<li><a href='add_charge.php'>Add Charge</a></li>");
+			printf("<li><a href='add_user.php'>Add User</a></li>");
 			printf("<li><a href='view_charges.php'>View Charges</a></li>");
+			printf("<li><a href='view_users.php'>View Users</a></li>");
 		} else {
 			printf("<li><a href='my_tickets.php'>My Tickets</a></li>");
 		}

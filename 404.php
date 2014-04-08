@@ -1,4 +1,4 @@
-<?php include('header.php'); ?>
+<?php include_once 'header.php' ?>
 
 <h2>Danger Will Robinson, Danger!</h2>
 
@@ -6,4 +6,4 @@
 
 <p>Why don't you stick to using the navigation links above.</p>
 
-<?php include('footer.php'); ?>
+<?php include_once 'footer.php' ?>
