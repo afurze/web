@@ -40,6 +40,13 @@
 				}
 			}
 		}
+
+		// add ticket lookup
+		printf('<form action="process_ticket_lookup.php" method="post">');
+		printf('<input type="hidden" name="clientID" value="' . $clientID . '">');
+		printf('<input type="Submit" value="Lookup Tickets">');
+		printf('</form>');
+		
 		printf('</dl>');
 	} else {
 		echo "No results found.";
