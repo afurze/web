@@ -8,6 +8,7 @@
 		printf("<h2>Welcome ".$_SESSION["username"]."</h2>");
 		printf("<ul>");
 		if($_SESSION["isAdmin"] == true) {
+			printf("<h3>Client Activities</h3>");
 			printf("<li><a href='add_client.php'>Add Client</a></li>");
 			printf("<li><a href='add_computer.php'>Add Computer</a></li>");
 			printf("<li><a href='add_ticket.php'>Add Ticket</a></li>");
@@ -15,6 +16,9 @@
 			printf("<li><a href='lookup_computer.php'>Lookup Computer</a></li>");
 			printf("<li><a href='lookup_ticket.php'>Lookup Ticket</a></li>");
 
+			printf("<h3>System Activities</h3>");
+			printf("<li><a href='add_charge.php'>Add Charge</a></li>");
+			printf("<li><a href='view_charges.php'>View Charges</a></li>");
 		} else {
 			printf("<li><a href='my_tickets.php'>My Tickets</a></li>");
 		}
